@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos para treinar CSS</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* HEADER */
+
+    header{
+      background: #1e293b;
+      color: white;
+      padding: 20px 40px;
+    }
+
+    .navbar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo{
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* HERO */
+
+    .hero{
+      height: 70vh;
+      background:
+      linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      ),
+      url('https://hermes.dio.me/assets/articles/9ebb9245-8a87-4408-bd52-31926e3163d2.png')
+      center/cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-content h1{
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p{
+      font-size: 20px;
+    }
+
+    /* SECTION */
+
+    .section{
+      padding: 60px 40px;
+    }
+
+    .section-title{
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    /* CARDS */
+
+    .cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card{
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+    }
+
+    .card-img{
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .card h3{
+      margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* RESPONSIVO */
+
+    @media (max-width: 768px){
+
+      .hero-content h1{
+        font-size: 36px;
+      }
+
+      .hero-content p{
+        font-size: 18px;
+      }
+
+      .section{
+        padding: 40px 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="navbar">
+      <div class="logo">Nelly</div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jogos para treinar CSS</h1>
+      <p>Para se divertir e aprender ao mesmo tempo!</p>
+    </div>
+  </section>
+
+  <!-- JOGOS -->
+
+  <section class="section">
+
+    <h2 class="section-title">Jogos</h2>
+
+    <div class="cards">
+
+      <!-- CSS DINER -->
+
+      <a href="css-diner.html" class="card">
+
+        <img
+          class="card-img"
+          src="https://flukeout.github.io/images/fb-share.jpg"
+          alt="CSS Diner"
+        >
+
+        <h3>CSS Diner</h3>
+        <p>Clique para saber mais</p>
+
+      </a>
+
+      <!-- FLEXBOX DEFENSE -->
+
+      <a href="flexbox-defense.html" class="card">
+
+        <img
+          class="card-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbq0m42mKJX5KaN4x9WhB3YaCXrNyyI_oFYQ&s"
+          alt="Flexbox Defense"
+        >
+
+        <h3>Flexbox Defense</h3>
+        <p>Clique para saber mais</p>
+
+      </a>
+
+      <!-- FLEXBOX FROGGY -->
+
+      <a href="flexbox-froggy.html" class="card">
+
+        <img
+          class="card-img"
+          src="https://flexboxfroggy.com/images/screenshot.png"
+          alt="Flexbox Froggy"
+        >
+
+        <h3>Flexbox Froggy</h3>
+        <p>Clique para saber mais</p>
+
+      </a>
+
+      <!-- GRID GARDEN -->
+
+      <a href="grid-garden.html" class="card">
+
+        <img
+          class="card-img"
+          src="https://cssgridgarden.com/images/screenshot.png"
+          alt="Grid Garden"
+        >
+
+        <h3>Grid Garden</h3>
+        <p>Clique para saber mais</p>
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>Sesc</p>
+  </footer>
+
+</body>
+</html>

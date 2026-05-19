@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Favoritos - Filmes e Séries</title>
+
+    <style>
+        /* Seletor por TAG */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Seletor por ID */
+        #titulo-principal {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Seletor por CLASSE */
+        .secao {
+            background-color: white;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        /* Agrupamento de seletores */
+        p, li {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Destaque especial */
+        .destaque {
+            color: darkred;
+            font-weight: bold;
+        }
+
+        /* Recomendação */
+        #recomendacao {
+            background-color: #ffeaa7;
+            border-left: 5px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titulo-principal">🎬 Meus Filmes e Séries Favoritos</h1>
+
+    <div class="secao">
+        <p>
+            Muitas poucas coisas me agradam quando estamos falando de filmes ou séries, e as poucas que me agradaram significam o mundo pra mim. Eu adoro filmes que contem assuntos polêmicos, e é esse meu gosto para filmes.
+        </p>
+    </div>
+
+    <div class="secao">
+        <h2>Filmes e séries favoritas</h2>
+        <ul>
+            <li class="item">500 dias com ela</li>
+            <li class="item">Breaking bad</li>
+            <li class="item destaque">Aos treze</li>
+            <img src="images.jpg"></img>
+            <img src="breaking.jpg"></img>
+            <img src="thirteen.jpg"></img>
+        </ul>
+    </div>
+
+    <div class="secao">
+        <h2>Personagens Favoritos</h2>
+        <ul>
+            <li class="item">Tom Hansen</li>
+            <li class="item">Jesse Pinkman</li>
+            <li class="item destaque">Saul Goodman</li>
+             <img src="tom.webp"></img>
+            <img src="jesse.webp"></img>
+            <img src="saul.webp"></img>
+        </ul>
+    </div>
+
+    <div class="secao" id="recomendacao">
+        <h2>Recomendação</h2>
+        <p>
+            Eu recomendo MUITO assistir Breaking Bad, no começo pode ser chato mas a série vai se construindo ao longo do tempo e virando uma coisa mirabolante e incrível e muito cativante de assistir. Concerteza é minha série favorita de todos os tempos.
+        </p>
+    </div>
+
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Séries e Filmes Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        h2, p {
+            margin-bottom: 10px;
+        }
+
+        .item {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 5px solid #333;
+        }
+
+        /* FILMES lado a lado */
+        .filme {
+            display: inline-block;
+            width: 45%;
+            margin: 2%;
+            vertical-align: top;
+            background-color: #fafafa;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .filme img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* NOVO: TOP 3 */
+        #top3 {
+            border-top: 4px solid #ffaa00;
+            text-align: center;
+        }
+
+        .top-item {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            padding: 10px;
+            background-color: #fff8e1;
+            border-radius: 8px;
+        }
+
+        /* Agrupamento */
+        .top-item h3, .top-item p {
+            margin: 5px 0;
+        }
+
+        #series {
+            border-top: 4px solid #0077cc;
+        }
+
+        #filmes {
+            border-top: 4px solid #cc0000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- NOVA SEÇÃO -->
+<section id="top3">
+    <h2> Top 3 Favoritos</h2>
+
+    <div class="top-item">
+        <h3>500 Dias Com Ela</h3>
+    </div>
+        
+
+    <div class="top-item">
+        <h3>Breaking Bad</h3>
+    </div>
+
+    <div class="top-item">
+        <h3>Thirteen</h3>
+    </div>
+</section>
+</body>
+</html>
