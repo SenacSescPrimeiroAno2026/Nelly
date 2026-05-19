@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Defense</title>
+
+ <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* HEADER */
+
+    header{
+      background: #1e293b;
+      color: white;
+      padding: 20px 40px;
+    }
+
+    .navbar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo{
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    /* HERO */
+
+    .hero{
+      height: 70vh;
+      background:
+      linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      ),
+      url('https://hermes.dio.me/assets/articles/9ebb9245-8a87-4408-bd52-31926e3163d2.png')
+      center/cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-content h1{
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p{
+      font-size: 20px;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    /* SECTION */
+
+    .section{
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section-title{
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #1e293b;
+    }
+
+    .section p{
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    /* BOTÕES */
+
+    .btn{
+      display: inline-block;
+      padding: 12px 22px;
+      background: #38bdf8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+      margin: 10px;
+    }
+
+    .btn:hover{
+      background: #0ea5e9;
+      transform: translateY(-2px);
+    }
+
+    /* IMAGEM */
+
+    .card-img{
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* FOOTER */
+
+    footer{
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* RESPONSIVO */
+
+    @media (max-width: 768px){
+
+      .hero-content h1{
+        font-size: 36px;
+      }
+
+      .hero-content p{
+        font-size: 18px;
+      }
+
+      .section{
+        padding: 40px 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+ <!-- HEADER -->
+ <header>
+  <nav class="navbar">
+
+    <div class="logo">
+      Flexbox Froggy
+    </div>
+
+  </nav>
+</header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Aprenda Flexbox Jogando</h1>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO -->
+
+  <section class="section">
+
+    <h2 class="section-title">Sobre o jogo</h2>
+
+    <p>
+      O Flexbox Froggy é um jogo educativo gratuito projetado para ensinar os fundamentos do CSS Flexbox de forma prática e divertida, disponível em português. O objetivo é ajudar sapinhos a chegarem em suas vitórias-régias escrevendo comandos CSS (como justify-content e align-items) que manipulam o layout.
+    </p>
+
+    <a
+      class="btn"
+      href="https://flexboxfroggy.com/"
+      target="_blank"
+    >
+      Jogar agora
+    </a>
+
+    <br><br>
+
+    <img
+      class="card-img"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBYJ7dWsP1VTihNlrflXRLLeSKz0d0uxJXA&s"
+      alt="Flexbox Defense"
+    >
+
+    <br><br>
+
+    <a class="btn" href="index.html">
+      ← Voltar
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>Sesc</p>
+  </footer>
+
+</body>
+</html>
